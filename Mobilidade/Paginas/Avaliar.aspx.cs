@@ -16,8 +16,6 @@ namespace Mobilidade.Paginas
         {
             lblacao.Text = "";
             idusu = Convert.ToInt32(Session["Salvarid"].ToString());
-           // limparCampos();
-            //carregarDados();
             //btngravar.Attributes.Add("onclick", "return valida_form_clt()");
             //txtdata.Attributes.Add("onkeypress", "Mascaradt(this)");
             //txtfone.Attributes.Add("onkeypress", "Mascara(this)");
