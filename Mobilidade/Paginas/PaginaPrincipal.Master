@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaPrincipal.master.cs" Inherits="Mobilidade.Paginas.PaginaPrincipal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <meta charset="UTF-8" />
+    <title>Sistema Mobilidade</title>
+    <script language="javascript" type="text/javascript" src="validavcl.js"></script>
+    <script language="javascript" type="text/javascript" src="validausu.js"></script>
+    <script language="javascript" type="text/javascript" src="validaloc.js"></script>
+    <script language="javascript" type="text/javascript" src="mascfone.js"></script>
+    <script language="javascript" type="text/javascript" src="mascdt.js"></script>
+    <script language="javascript" type="text/javascript" src="mascplc.js"></script>
+    <script language="javascript" type="text/javascript" src="devolucao.js"></script>
+    <link rel="stylesheet" href="/Estilos/styloo.css" />
+
+</head>
+<body>
+
+    <header>
+	    <table>
+        <tr>
+            <td> <img src="../imagens/banner0.jpg" /> </td>
+	        <td> <h1> Mobilidade Urbana </h1> </td>
+            <td> <img src="../imagens/banner0.jpg" /> </td>
+        </tr>
+        </table>
+    </header>
+
+    <nav>
+        <ul class="mainmenu">
+            <li><a class="active" href="/Default.aspx"> Home </a></li>
+            <li><a href="#news"> Cadastro </a>
+                <ul class="submenu">
+                    <li><a href="/Paginas/CadastroUsuario.aspx"> Usuário </a></li>
+                </ul>
+            </li>
+            <li><a href="#news"> Comentar Serviço </a>
+                <ul class="submenu">
+                    <li><a href="/Paginas/Sugestao.aspx"> Relatar Sugestão </a></li>
+                    <li><a href="/Paginas/Problema.aspx"> Relatar Problema </a></li>
+                </ul>
+            </li>
+            <li><a href="#about"> Avaliar Serviço </a>
+                <ul class="submenu">
+                    <li><a href="/Paginas/Avaliar.aspx"> Avaliar </a></li>
+                </ul>
+            </li>
+            <li><a href ="#about">Visualizar Comentarios</a>
+                <ul class ="submenu">
+                    <li><a href ="/Paginas/AvaliaRelatorio.aspx">Avaliacao</a></li>
+                    <li><a href ="/Paginas/ProblemaRelatorio.aspx">Problemas</a></li>
+                    <li><a href ="/Paginas/SugestaoRelatorio.aspx">Sugestão</a></li>
+                </ul>
+
+            </li>
+        </ul>
+    </nav>
+
+    <article>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    </article>
+    <footer>
+        <h6> Desenvolvido pela Equipe Master&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="lbllog" runat="server" Text="Label"></asp:Label>
+        </h6>
+    </footer>
+</body>
+</html>
