@@ -7,13 +7,13 @@
 <head runat="server">
     <meta charset="UTF-8" />
     <title>Sistema Mobilidade</title>
-    <script language="javascript" type="text/javascript" src="validavcl.js"></script>
+    <script language="javascript" type="text/javascript" src="validasugestao.js"></script>
     <script language="javascript" type="text/javascript" src="validausu.js"></script>
-    <script language="javascript" type="text/javascript" src="validaloc.js"></script>
+    <script language="javascript" type="text/javascript" src="validaavaliacao.js"></script>
     <script language="javascript" type="text/javascript" src="mascfone.js"></script>
     <script language="javascript" type="text/javascript" src="mascdt.js"></script>
     <script language="javascript" type="text/javascript" src="mascplc.js"></script>
-    <script language="javascript" type="text/javascript" src="devolucao.js"></script>
+    <script language="javascript" type="text/javascript" src="validacaoproblema.js"></script>
     <link rel="stylesheet" href="/Estilos/styloo.css" />
 
 </head>

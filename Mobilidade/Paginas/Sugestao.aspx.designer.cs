@@ -22,31 +22,31 @@ namespace Mobilidade.Paginas {
         protected global::System.Web.UI.WebControls.Label lblmsg1;
         
         /// <summary>
-        /// Dropdtipo control.
+        /// DropDowntipo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Dropdtipo;
+        protected global::System.Web.UI.WebControls.DropDownList DropDowntipo;
         
         /// <summary>
-        /// Dropdnome control.
+        /// DropDownnome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Dropdnome;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownnome;
         
         /// <summary>
-        /// txtcoment control.
+        /// txtcomnt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtcoment;
+        protected global::System.Web.UI.WebControls.TextBox txtcomnt;
         
         /// <summary>
         /// btnsalvar control.

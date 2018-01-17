@@ -1,4 +1,4 @@
-function valida_form_clt (){
+function valida_form_usu (){
 	if(document.getElementById("ContentPlaceHolder1_txtnome").value == ""){
 		alert('Por favor, preencha o campo nome');
 		document.getElementById("ContentPlaceHolder1_txtnome").focus();

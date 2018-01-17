@@ -13,7 +13,7 @@ namespace Mobilidade.Paginas
         protected void Page_Load(object sender, EventArgs e)
         {
             lblacao.Text = "";
-            Button1.Attributes.Add("onclick", "return valida_form_clt()");
+            Button1.Attributes.Add("onclick", "return valida_form_usu()");
             //txtfone.Attributes.Add("onkeypress", "Mascara(this)");
             //txtdata.Attributes.Add("onkeypress", "Mascaradt(this)");
         }

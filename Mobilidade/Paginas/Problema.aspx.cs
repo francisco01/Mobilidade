@@ -17,7 +17,7 @@ namespace Mobilidade.Paginas
             lblmsg.Text = "";
             idusu = Convert.ToInt32(Session["Salvarid"].ToString());
             txtdata.Attributes.Add("onkeypress", "Mascaradt(this)");
-            //btnloc.Attributes.Add("onclick", "return Alerta_loc()");
+            btnSalvar.Attributes.Add("onclick", "return valida_problema()");
             if (!IsPostBack)
             {
                 carregarDados();
@@ -39,10 +39,10 @@ namespace Mobilidade.Paginas
             {
                 databaseConnection.Open();
                 reader = commandDatabase.ExecuteReader();
-                dpltipo.DataSource = reader;
-                dpltipo.DataValueField = "idTipo_Servico";
-                dpltipo.DataTextField = "Tipo_Servico";
-                dpltipo.DataBind();
+                DropDowntipo.DataSource = reader;
+                DropDowntipo.DataValueField = "idTipo_Servico";
+                DropDowntipo.DataTextField = "Tipo_Servico";
+                DropDowntipo.DataBind();
                 databaseConnection.Close();
 
             }
@@ -102,8 +102,8 @@ namespace Mobilidade.Paginas
         protected void dpltipo_SelectedIndexChanged(object sender, EventArgs e)
         {
             habilitarCampos();
-            Response.Write(dpltipo.SelectedItem.Text + dpltipo.SelectedValue);
-            tiposervico = Convert.ToInt32(dpltipo.SelectedItem.Value);
+            Response.Write(DropDowntipo.SelectedItem.Text + DropDowntipo.SelectedValue);
+            tiposervico = Convert.ToInt32(DropDowntipo.SelectedItem.Value);
             //conexão;
             string connectionString = "datasource=localhost;port=3306;username=root;password=s3t3mbr0;database=mobilidade;";
             //string connectionString = "datasource=localhost;port=3306;username=root;password=;database=locadora;";

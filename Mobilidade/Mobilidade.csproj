@@ -132,7 +132,7 @@
     <Content Include="Paginas\Avaliar.aspx" />
     <Content Include="Paginas\Problema.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Paginas\devolucao.js" />
+    <Content Include="Paginas\validacaoproblema.js" />
     <Content Include="Paginas\ProblemaRelatorio.aspx" />
     <Content Include="Paginas\Sugestao.aspx" />
     <Content Include="Paginas\Login.aspx" />
@@ -141,8 +141,8 @@
     <Content Include="Paginas\mascplc.js" />
     <Content Include="Paginas\SugestaoRelatorio.aspx" />
     <Content Include="Paginas\validausu.js" />
-    <Content Include="Paginas\validaloc.js" />
-    <Content Include="Paginas\validavcl.js" />
+    <Content Include="Paginas\validasugestao.js" />
+    <Content Include="Paginas\validaavaliacao.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

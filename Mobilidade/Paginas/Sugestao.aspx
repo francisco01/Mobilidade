@@ -15,13 +15,13 @@
             <tr>
                 <td style="width: 187px">Tipo Serviço</td>
                 <td style="width: 172px">
-                    &nbsp;<asp:DropDownList ID="Dropdtipo" runat="server" AutoPostBack="True" Height="16px" OnSelectedIndexChanged="Dropdtipo_SelectedIndexChanged" Width="123px">
+                    &nbsp;<asp:DropDownList ID="DropDowntipo" runat="server" AutoPostBack="True" Height="16px" OnSelectedIndexChanged="Dropdtipo_SelectedIndexChanged" Width="123px">
                     </asp:DropDownList>
                 </td>
                 <td style="width: 117px">
                     Nome</td>
                 <td>
-                    <asp:DropDownList ID="Dropdnome" runat="server">
+                    <asp:DropDownList ID="DropDownnome" runat="server">
                     </asp:DropDownList>
                 </td>
             </tr>
@@ -56,7 +56,7 @@
             <tr>
                 <td style="width: 187px">Sugestão:</td>
                 <td style="width: 172px">
-                    <asp:TextBox ID="txtcoment" runat="server" TextMode="MultiLine"></asp:TextBox>
+                    <asp:TextBox ID="txtcomnt" runat="server" TextMode="MultiLine"></asp:TextBox>
                     </td>
                 <td style="width: 117px">
                     &nbsp;</td>

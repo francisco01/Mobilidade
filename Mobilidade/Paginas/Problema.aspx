@@ -10,7 +10,7 @@
         <tr>
             <td style="width: 190px">Selecione o tipo de serviço:</td>
             <td style="width: 358px">
-                <asp:DropDownList ID="dpltipo" runat="server" OnSelectedIndexChanged="dpltipo_SelectedIndexChanged" AutoPostBack="True">
+                <asp:DropDownList ID="DropDowntipo" runat="server" OnSelectedIndexChanged="dpltipo_SelectedIndexChanged" AutoPostBack="True">
                 </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;
                 </td>
