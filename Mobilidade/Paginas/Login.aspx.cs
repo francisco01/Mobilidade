@@ -40,6 +40,8 @@ namespace Mobilidade.Paginas
                 {
                     Session["Salvarid"] = reader.GetUInt32(0);
                     Session["Salvarnome"] = reader.GetString("login");
+                    Session["Salvarsenha"] = reader.GetString("senha");
+                    Session["tpusu"] = reader.GetUInt16("UsuAdm");
                 }
                 FormsAuthentication.RedirectFromLoginPage(user,false);
                 //Response.Redirect("Default.aspx",);
@@ -69,6 +71,7 @@ namespace Mobilidade.Paginas
                 if (reader.Read())
                 {
                     Session["Salvarid"] = "";
+                    Session["Salvarnome"] = "";
                 }
                 FormsAuthentication.RedirectFromLoginPage(user, false);
                 Response.Redirect("/Paginas/CadastroUsuario.aspx");

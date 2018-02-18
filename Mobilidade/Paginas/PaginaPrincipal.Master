@@ -32,11 +32,6 @@
     <nav>
         <ul class="mainmenu">
             <li><a class="active" href="/Default.aspx"> Home </a></li>
-            <li><a href="#news"> Cadastro </a>
-                <ul class="submenu">
-                    <li><a href="/Paginas/CadastroUsuario.aspx"> Usuário </a></li>
-                </ul>
-            </li>
             <li><a href="#news"> Comentar Serviço </a>
                 <ul class="submenu">
                     <li><a href="/Paginas/Sugestao.aspx"> Relatar Sugestão </a></li>
@@ -55,6 +50,18 @@
                     <li><a href ="/Paginas/SugestaoRelatorio.aspx">Sugestão</a></li>
                 </ul>
 
+            </li>
+            <li><a href ="#about">Administrador</a>
+                <ul class ="submenu">
+                    <li><a href ="/Paginas/PermissaoAdmin.aspx">Permissão Admin</a></li>
+                    <li><a href ="/Paginas/RemoverPermissaoAdmin.aspx">Remover Permissão Admin</a></li>
+                </ul>
+            </li>
+            <li><a href="#about">Dados</a>
+                <ul class ="submenu">
+                    <li><a href ="/Paginas/Del_Alt_estacao.aspx">Atualizar/Excluir</a></li>
+                     <li><a href ="/Paginas/Inserir_estacao.aspx">Inserir</a></li>
+                </ul>
             </li>
         </ul>
     </nav>

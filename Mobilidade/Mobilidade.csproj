@@ -105,6 +105,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Paginas\AvaliaRelatorio.aspx" />
+    <Content Include="Paginas\Del_Alt_estacao.aspx" />
+    <Content Include="Paginas\Inserir_estacao.aspx" />
     <Content Include="Paginas\PaginaPrincipal.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -130,8 +132,10 @@
     <Content Include="Paginas\CadastroUsuario.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Paginas\Avaliar.aspx" />
+    <Content Include="Paginas\PermissaoAdmin.aspx" />
     <Content Include="Paginas\Problema.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Paginas\RemoverPermissaoAdmin.aspx" />
     <Content Include="Paginas\validacaoproblema.js" />
     <Content Include="Paginas\ProblemaRelatorio.aspx" />
     <Content Include="Paginas\Sugestao.aspx" />
@@ -178,6 +182,27 @@
     <Compile Include="Paginas\Avaliar.aspx.designer.cs">
       <DependentUpon>Avaliar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\Del_Alt_estacao.aspx.cs">
+      <DependentUpon>Del_Alt_estacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Del_Alt_estacao.aspx.designer.cs">
+      <DependentUpon>Del_Alt_estacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Inserir_estacao.aspx.cs">
+      <DependentUpon>Inserir_estacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Inserir_estacao.aspx.designer.cs">
+      <DependentUpon>Inserir_estacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PermissaoAdmin.aspx.cs">
+      <DependentUpon>PermissaoAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PermissaoAdmin.aspx.designer.cs">
+      <DependentUpon>PermissaoAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\Problema.aspx.cs">
       <DependentUpon>Problema.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -191,6 +216,13 @@
     </Compile>
     <Compile Include="Paginas\ProblemaRelatorio.aspx.designer.cs">
       <DependentUpon>ProblemaRelatorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RemoverPermissaoAdmin.aspx.cs">
+      <DependentUpon>RemoverPermissaoAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RemoverPermissaoAdmin.aspx.designer.cs">
+      <DependentUpon>RemoverPermissaoAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Sugestao.aspx.cs">
       <DependentUpon>Sugestao.aspx</DependentUpon>

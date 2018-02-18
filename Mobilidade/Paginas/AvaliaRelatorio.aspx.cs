@@ -10,8 +10,12 @@ namespace Mobilidade.Paginas
 {
     public partial class AvaliaRelatorio : System.Web.UI.Page
     {
+        string login;
+        string senha;
         protected void Page_Load(object sender, EventArgs e)
         {
+            login = Convert.ToString(Session["Salvarnome"].ToString());
+            senha = Convert.ToString(Session["Salvarsenha"].ToString());
             if (!IsPostBack)
             {
                 carregarDados();
@@ -21,7 +25,7 @@ namespace Mobilidade.Paginas
         private void carregarDados()
         {
             //conexão;
-            string connectionString = "datasource=localhost;port=3306;username=root;password=s3t3mbr0;database=mobilidade;";
+            string connectionString = "datasource=localhost;port=3306;username= '" + login + "';password='" + senha + "';database=mobilidade;";
             //string connectionString = "datasource=localhost;port=3306;username=root;password=;database=locadora;";
             string query = "select idTipo_Servico, Tipo_Servico FROM tipo_servico  order by idTipo_Servico";
             // Prepare the connection
@@ -61,9 +65,9 @@ namespace Mobilidade.Paginas
         protected void DropDowntipo_SelectedIndexChanged(object sender, EventArgs e)
         {
             //conexão;
-            string connectionString = "datasource=localhost;port=3306;username=root;password=s3t3mbr0;database=mobilidade;";
+            string connectionString = "datasource=localhost;port=3306;username= '" + login + "';password='" + senha + "';database=mobilidade;";
             //string connectionString = "datasource=localhost;port=3306;username=root;password=;database=locadora;";
-            string query = "select servico.Nome AS 'Estação/Ciclovia/Aeroporto', avalia.Nota AS 'Nota da Avaliação', avalia.Comentario from avalia inner join servico on servico_idservico = idservico WHERE servico_idservico IN(select idservico from servico where tipo_servico_idtipo_servico ='" + DropDowntipo.SelectedValue.Trim() + "')";
+            string query = "select servico.Nome AS '" + DropDowntipo.SelectedItem.Text.Trim() + "', avalia.Nota AS 'Nota da Avaliação', avalia.Comentario from avalia inner join servico on servico_idservico = idservico WHERE servico_idservico IN(select idservico from servico where tipo_servico_idtipo_servico ='" + DropDowntipo.SelectedValue.Trim() + "')";
             // Prepare the connection
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);

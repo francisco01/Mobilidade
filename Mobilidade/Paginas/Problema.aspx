@@ -8,15 +8,15 @@
 <div style="height: 232px">
     <table style="text-align:left; font-weight: bold; color: brown; font-size: large; width: 100%">
         <tr>
-            <td style="width: 190px">Selecione o tipo de serviço:</td>
-            <td style="width: 358px">
+            <td style="width: 190px; height: 44px;">Selecione o tipo de serviço:</td>
+            <td style="width: 358px; height: 44px;">
                 <asp:DropDownList ID="DropDowntipo" runat="server" OnSelectedIndexChanged="dpltipo_SelectedIndexChanged" AutoPostBack="True">
                 </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;
                 </td>
-            <td style="width: 156px">
+            <td style="width: 156px; height: 44px;">
                 Selecione o nome:</td>
-            <td>
+            <td style="height: 44px">
                 <asp:DropDownList ID="DropDownnome" runat="server">
                 </asp:DropDownList>
             </td>

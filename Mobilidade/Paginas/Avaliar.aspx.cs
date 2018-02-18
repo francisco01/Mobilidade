@@ -12,10 +12,14 @@ namespace Mobilidade.Paginas
     {
         int tiposervico;
         int idusu;
+        string login;
+        string senha;
         protected void Page_Load(object sender, EventArgs e)
         {
             lblacao.Text = "";
             idusu = Convert.ToInt32(Session["Salvarid"].ToString());
+            login = Convert.ToString(Session["Salvarnome"].ToString());
+            senha = Convert.ToString(Session["Salvarsenha"].ToString());
             btngravar.Attributes.Add("onclick", "return valida_avaliacao()");
             if (!IsPostBack)
             {
@@ -26,7 +30,7 @@ namespace Mobilidade.Paginas
         private void carregarDados()
         {
             //conexão;
-            string connectionString = "datasource=localhost;port=3306;username=root;password=s3t3mbr0;database=mobilidade;";
+            string connectionString = "datasource=localhost;port=3306;username= '"+login+ "';password='"+senha+"';database=mobilidade;";
             //string connectionString = "datasource=localhost;port=3306;username=root;password=;database=locadora;";
             string query = "select idTipo_Servico, Tipo_Servico FROM tipo_servico  order by idTipo_Servico";
             // Prepare the connection
@@ -79,7 +83,7 @@ namespace Mobilidade.Paginas
             int idserv = Convert.ToInt32(DropDownnome.SelectedValue);
             try
             {
-                string connectionString = "datasource=localhost;port=3306;username=root;password=s3t3mbr0;database=mobilidade;";
+                string connectionString = "datasource=localhost;port=3306;username= '" + login + "';password='" + senha + "';database=mobilidade;";
                 MySqlConnection databaseConnection = new MySqlConnection(connectionString);
                 databaseConnection.Open();
                 // Prepare the connection
@@ -106,7 +110,7 @@ namespace Mobilidade.Paginas
             Response.Write(DropDowntipo.SelectedItem.Text + DropDowntipo.SelectedValue);
             tiposervico = Convert.ToInt32( DropDowntipo.SelectedItem.Value);
             //conexão;
-            string connectionString = "datasource=localhost;port=3306;username=root;password=s3t3mbr0;database=mobilidade;";
+            string connectionString = "datasource=localhost;port=3306;username= '" + login + "';password='" + senha + "';database=mobilidade;";
             //string connectionString = "datasource=localhost;port=3306;username=root;password=;database=locadora;";
             string query = "select * FROM servico where Tipo_Servico_idTipo_Servico = '"+tiposervico+"'";
             // Prepare the connection
